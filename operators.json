@@ -1,6 +1,7 @@
 {
   "operators": {
     "attackers": [
+      "Striker",
       "Sledge",
       "Thatcher",
       "Ash",
@@ -36,10 +37,10 @@
       "Grim",
       "Brava",
       "Ram",
-      "Deimos",
-      "Striker"
+      "Deimos"
     ],
     "defenders": [
+      "Sentry",
       "Smoke",
       "Mute",
       "Castle",
@@ -74,8 +75,7 @@
       "Azami",
       "Solis",
       "Fenrir",
-      "Tubarão",
-      "Sentry"
+      "Tubarão"
     ]
   }
 }

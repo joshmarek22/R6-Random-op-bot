@@ -25,7 +25,7 @@ async def on_ready():
 async def attacker(ctx):
     randomNum = random.randint(0,attackersNum - 1)
     randomAttacker = operator["operators"]["attackers"][randomNum]
-    print(randomAttacker)
+    print(f"{ctx.author.global_name} got: {randomAttacker}")
     await ctx.send(f"{ctx.author.global_name} got: {randomAttacker}", delete_after=30)
 
 
@@ -33,7 +33,7 @@ async def attacker(ctx):
 async def defender(ctx):
     randomNum = random.randint(0,defendersNum - 1)
     randomDefender = operator["operators"]["defenders"][randomNum]
-    print(randomDefender)
+    print(f"{ctx.author.global_name} got: {randomDefender}")
     await ctx.send(f"{ctx.author.global_name} got: {randomDefender}", delete_after=30)
 
 bot.run(TOKEN)
