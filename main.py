@@ -32,13 +32,13 @@ class myView(discord.ui.View):
     async def attacker(self,  interaction: discord.interactions, button: discord.ui.Button):
         attacker = getAttacker()
         print(f"{interaction.user.global_name} got: {attacker}")
-        await interaction.response.send_message(f"{interaction.user.global_name} got: {attacker}", delete_after=6)
+        await interaction.response.send_message(f"{interaction.user.global_name} got: {attacker}", delete_after=30)
 
     @discord.ui.button(label="Defender", style=discord.ButtonStyle.danger)
     async def defender(self,  interaction: discord.interactions, button: discord.ui.Button):
         defender = getDefender()
         print(f"{interaction.user.global_name} got: {defender}")
-        await interaction.response.send_message(f"{interaction.user.global_name} got: {defender}" , delete_after=6)
+        await interaction.response.send_message(f"{interaction.user.global_name} got: {defender}" , delete_after=30)
 
 
 @bot.event
