@@ -48,7 +48,7 @@ async def on_ready():
 
 @bot.command()
 async def rndOps(ctx):
-    view = myView()
+    view = myView(timeout=None)
     await ctx.send(view=view)
 
 
